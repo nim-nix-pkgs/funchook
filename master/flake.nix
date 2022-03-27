@@ -11,6 +11,7 @@
   inputs.src-funchook-master.ref   = "refs/heads/master";
   inputs.src-funchook-master.owner = "ba0f3";
   inputs.src-funchook-master.repo  = "funchook.nim";
+  inputs.src-funchook-master.dir   = "";
   inputs.src-funchook-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

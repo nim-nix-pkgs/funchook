@@ -11,6 +11,7 @@
   inputs.src-funchook-0_1_2.ref   = "refs/tags/0.1.2";
   inputs.src-funchook-0_1_2.owner = "ba0f3";
   inputs.src-funchook-0_1_2.repo  = "funchook.nim";
+  inputs.src-funchook-0_1_2.dir   = "";
   inputs.src-funchook-0_1_2.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
