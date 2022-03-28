@@ -11,8 +11,15 @@
   inputs.src-funchook-0_1_1.ref   = "refs/tags/0.1.1";
   inputs.src-funchook-0_1_1.owner = "ba0f3";
   inputs.src-funchook-0_1_1.repo  = "funchook.nim";
-  inputs.src-funchook-0_1_1.dir   = "";
   inputs.src-funchook-0_1_1.type  = "github";
+  
+  inputs."distorm3".owner = "nim-nix-pkgs";
+  inputs."distorm3".ref   = "master";
+  inputs."distorm3".repo  = "distorm3";
+  inputs."distorm3".dir   = "3_5_2";
+  inputs."distorm3".type  = "github";
+  inputs."distorm3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."distorm3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
